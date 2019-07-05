@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.blog_app.ItemSingleActivity">
+
+    <ImageView
+        android:id="@+id/singleItemImage"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/singleItemDesc"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/singleItemDesc"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/add_btn" />
+
+    <TextView
+
+        android:id="@+id/singleItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/singleItemImage"
+        android:layout_alignStart="@+id/singleItemImage"
+        android:layout_below="@+id/singleItemImage"
+        android:layout_marginTop="13dp"
+        android:hint="add the name " />
+
+    <TextView
+        android:id="@+id/singleItemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/singleItemTitle"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/singleItemDesc"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singleRemoveBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:textColor="#006400"
+        android:text="Contact Seller" />
+
+    <Button
+        android:id="@+id/singleRemoveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Remove Post"
+        android:textColor="@color/colorAccent"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
